@@ -34,8 +34,6 @@ cd virnatrap-main
 pip install .
 ```
 
-**We will add to pypi as well to add an option pip install virnatrap
-
 ### Install with conda 
 1- Get anaconda (64 bit)installer python3.x for linux : https://www.anaconda.com/download/#linux <br />
 2- Run the installer : bash Anaconda3-2021.11-Linux-x86_64.sh, and follow the instructions to install anaconda at your preferred directory
