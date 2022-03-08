@@ -22,7 +22,7 @@ Python versions tested: Python 3.6, 3.7, 3.8 and 3.9
 
 ## Installation
 ### Install with pip
-For most recent stable pypi version of this too, run the following command
+For most recent stable pypi version of this tool, run the following command
 ```
 pip install virnatrap
 ```
