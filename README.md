@@ -7,7 +7,7 @@ viRNAtrap is a package to generate predicted viral contigs from unmapped RNAseq 
 ## Overview 
 This file describes the software package viRNAtrap [1], an alignment-free method to identify viral reads in RNAseq datasets based on a deep learning model and to assemble predicted viral contigs. There are four key steps in viRNAtrap: 
 1. Building a Tensorflow model to predict whether reads of a fixed length come from viruses or not; this has been precomputed based on 48bp reads. 
-2. Given one or more input files of RNAseq reads (could be paired or unpaired), map reads to the human genome; this is performed independently by the user. (Questions: can viRNAseq take as input DNA reads from whole genome sequencing? Also, do you want to recommed a particular set of arguments to STAR for mapping?)
+2. Given one or more input files of RNAseq reads (could be paired or unpaired), map reads to the human genome; this is performed independently by the user.
 3. Use the Tensorflow model to predict which of the unmapped reads are viral; this is performed by the included software.
 4. Assemble the predicted viral reads into longer contigs; this is performed by the included software using either slow (native Python implementation) or fast (C implementation) modes.
 
