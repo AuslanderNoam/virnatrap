@@ -29,7 +29,7 @@ pip install virnatrap
 
 To install the current version of this Github repo, run the following commands
 ```
-git clone https://github.com/AuslanderLab/virnatrap_internal.git
+git clone https://github.com/AuslanderLab/virnatrap.git
 cd virnatrap-main
 pip install .
 ```
@@ -40,7 +40,7 @@ pip install .
 
 #### Run the following commands: <br />
 ```
-git clone https://github.com/AuslanderLab/virnatrap_internal.git
+git clone https://github.com/AuslanderLab/virnatrap.git
 cd virnatrap-main
 conda create --name virnatrap python=3.7 pip
 conda activate virnatrap
