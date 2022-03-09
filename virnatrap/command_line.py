@@ -3,11 +3,14 @@ import os
 from os.path import isdir,isfile
 from .virnatrap import run_virna_pred
 import argparse
+import virnatrap
 
 # Constants ------------------------------------------------------------------------------------------------------------
 
 DESCRIPTION = "Extract viral contigs from a directory with unmapped RNAseq reads fastq files and saves a file with contigs for each fastq in an output directory"
-PWD = os.getcwd()
+#PWD = os.getcwd()
+mpath = virnatrap.__file__
+PWD = mpath[:-12]
 
 # Terminal functions ---------------------------------------------------------------------------------------------------
 def virnatrap_predict():
@@ -65,6 +68,7 @@ def virnatrap_predict():
 
 
     if args.model_path is None:
+        
         model_path = PWD+'/model/model_lr_0.005_pool_5_emb_25_l2_0.02_64.hdf5'
     else:
         if not isfile(args.model_path):
