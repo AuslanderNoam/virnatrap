@@ -1,0 +1,1 @@
+include virnatrap/model/model_lr_0.005_pool_5_emb_25_l2_0.02_64.hdf5
