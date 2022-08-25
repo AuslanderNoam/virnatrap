@@ -1,8 +1,11 @@
 1. Pre-processing
 A Requirements
 (a) STAR: https://github.com/alexdobin/STAR
+
 (b) bowtie2: https://github.com/BenLangmead/bowtie2
+
 (c) bam2fastq: https://github.com/jts/bam2fastq
+
 (d) gdc-client: https://github.com/topics/gdc-client
 
 B Instructions
