@@ -2,13 +2,11 @@
 
 A Requirements
 
-(a) STAR: https://github.com/alexdobin/STAR
+(a) bowtie2: https://github.com/BenLangmead/bowtie2
 
-(b) bowtie2: https://github.com/BenLangmead/bowtie2
+(b) bam2fastq: https://github.com/jts/bam2fastq
 
-(c) bam2fastq: https://github.com/jts/bam2fastq
-
-(d) gdc-client: https://github.com/topics/gdc-client
+(c) gdc-client: https://github.com/topics/gdc-client
 
 B Instructions
 
@@ -25,7 +23,9 @@ B.2 Use the cat_paired.py scripts to copy paired-end files into one fastq file o
 
 A Requirements
 
-Blast: https://www.ncbi.nlm.nih.gov/books/NBK569861/
+(a) Blast: https://www.ncbi.nlm.nih.gov/books/NBK569861/
+
+(b) STAR: https://github.com/alexdobin/STAR
 
 divergent virus database (C-RVDBv16.0.txt): https://herv.img.cas.cz
 
