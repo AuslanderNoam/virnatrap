@@ -1,6 +1,6 @@
 #!/bin/bash -l
 #SBATCH -o out.txt
-#SBATCH --job-name=ucec-alext
+#SBATCH --job-name=alext
 #SBATCH -e error.txt
 #SBATCH  -n 15
          
