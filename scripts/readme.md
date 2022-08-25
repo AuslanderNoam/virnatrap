@@ -1,5 +1,5 @@
 1. Pre-processing
-2. 
+
 A Requirements
 
 (a) STAR: https://github.com/alexdobin/STAR
