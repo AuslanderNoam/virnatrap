@@ -1,4 +1,4 @@
-1. Pre-processing
+## 1. Pre-processing
 
 A Requirements
 
@@ -21,7 +21,7 @@ B.2 Use the align_extract_reads.sh script to extract unaligned reads from the BA
 B.2 Use the cat_paired.py scripts to copy paired-end files into one fastq file of all reads
 
 
-2. Post-processing
+## 2. Post-processing
 
 A Requirements
 
