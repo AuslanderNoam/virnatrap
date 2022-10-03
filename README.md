@@ -74,7 +74,7 @@ a. To run with an example input fastq file (```input_fastq/example_unmapped.fast
 virnatrap-predict --input input_fastq/ --output output_contigs/ 
 ```
 
-And evaluate the output file generated in ```output_contigs/``` using the expected output in ```expected_output/output_py.txt```
+And evaluate the output file generated in ```output_contigs/``` using the expected output in (*) ```expected_output/output_py.txt```
 
 There is a one-to-one correspondence between input files in directory input_fastq/ and output files in directory output_contigs (or whatever subdirectories the user specifies). If an input file leads to zero predicted viral contigs, then the corresponding output file will be created but will be empty.
 The output files are in FASTA format but have the suffix .txt because experience has shown that Mac user prefer the suffix .txt
@@ -86,7 +86,7 @@ b. To run viRNAtrap in fast mode, run the command as shown below:
 virnatrap-predict --input input_fastq/ --output output_contigs/ --fastmode 1 
 ```
 
-And evaluate the output file generated in ```output_contigs/``` using the expected output in ```expected_output/output_c.txt```
+And evaluate the output file generated in ```output_contigs/``` using the expected output in (*) ```expected_output/output_c.txt```
 
 The fast mode calls a C library to assemble the viral contigs from the model-predicted viral reads. The C library is located at ```virnatrap/src/assemble_read_c.c``` and must first be compiled using the command 
 
@@ -105,6 +105,12 @@ virnatrap-predict --input input_fastq/ --output output_contigs/ --multi_proc 1 -
 
 In multitreaded mode, viRNAtrap will use one thread per file, up to the minimum of the number of available threads and num_threads, where the default num_threads is 48.
 
+
+## Testing installation 
+Run the command (*) ```diff output_contigs/output_py.txt ../output_contigs/example_contigs.txt``` to test the installation 
+
+
+(*) Please expect minor differences in precision of the tensorflow model scores
 
 ### Parameters description:
 
