@@ -74,7 +74,7 @@ a. To run with an example input fastq file (```input_fastq/example_unmapped.fast
 virnatrap-predict --input input_fastq/ --output output_contigs/ 
 ```
 
-And evaluate the output file generated in ```output_contigs/``` using the expected output in (*) ```expected_output/output_py.txt```
+And evaluate the output file generated in ```output_contigs/``` using the expected output in  ```expected_output/output_py.txt```
 
 There is a one-to-one correspondence between input files in directory input_fastq/ and output files in directory output_contigs (or whatever subdirectories the user specifies). If an input file leads to zero predicted viral contigs, then the corresponding output file will be created but will be empty.
 The output files are in FASTA format but have the suffix .txt because experience has shown that Mac user prefer the suffix .txt
