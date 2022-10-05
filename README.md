@@ -80,13 +80,27 @@ There is a one-to-one correspondence between input files in directory input_fast
 The output files are in FASTA format but have the suffix .txt because experience has shown that Mac user prefer the suffix .txt
 If one wants to rerun the command with the same  input files and the same output_contigs/ output directory, one should first remove the previous output files. virrnatrap-predict will not overwrite output files that already exist. 
 
+The package comes with a small example that is intended to be used to test if one has installed viRNAtrap correctly. The expected output is in subdirectory expected_output. To test if the above command worked as expected, run the additional command
+
+ ```
+ diff expected_output/output_py.txt output_contigs/example_contigs.txt
+ ```
+ to compare the output in the new installation to the expected output. The installation is correct if the above diff command retruns either no differences or small differences in the less significant digits for the scores in brackets, such as:
+ ```
+ 5c5
+ < >contig2[0.8009399]
+ ---
+ > >contig2[0.8009398]
+ ```
+
+
 b. To run viRNAtrap in fast mode, run the command as shown below: 
 
 ```
 virnatrap-predict --input input_fastq/ --output output_contigs/ --fastmode 1 
 ```
 
-And evaluate the output file generated in ```output_contigs/``` using the expected output in (*) ```expected_output/output_c.txt```
+And evaluate the output file generated in ```output_contigs/``` using the expected output in ```expected_output/output_c.txt```
 
 The fast mode calls a C library to assemble the viral contigs from the model-predicted viral reads. The C library is located at ```virnatrap/src/assemble_read_c.c``` and must first be compiled using the command 
 
@@ -105,12 +119,6 @@ virnatrap-predict --input input_fastq/ --output output_contigs/ --multi_proc 1 -
 
 In multitreaded mode, viRNAtrap will use one thread per file, up to the minimum of the number of available threads and num_threads, where the default num_threads is 48.
 
-
-## Testing installation 
-Run the command (*) ```diff output_contigs/output_py.txt ../output_contigs/example_contigs.txt``` to test the installation 
-
-
-(*) Please expect minor differences in precision of the tensorflow model scores
 
 ### Parameters description:
 
