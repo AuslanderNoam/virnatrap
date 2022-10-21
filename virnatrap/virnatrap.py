@@ -46,7 +46,7 @@ SEARCHSUBLEN = 24
 
 # Functions ------------------------------------------------------------------------------------------------------------
 
-def random_base():
+def random_base(seq=None):
     """
     Generate a random base.
     :return: Random base.
