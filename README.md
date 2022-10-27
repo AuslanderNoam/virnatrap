@@ -67,7 +67,7 @@ Charles R. Harris, K. Jarrod Millman, Stefan J. van der Walt, Ralf Gommers, Paul
 To use viRNAtrap, a user must provide an input directory continaing one or more input FASTQ files of unmapped reads with file names ending in  *\*_unmapped.fastq*, and a path to an output directory, where a FASTA containing predicted viral contigs will be generated for each FASTQ of unmapped reads in the input directory. For pairs of files with paired reads from the same sample, which may be stored separately for other sequence analysis, the user is advised to concatenate the two files into one combined file for input to viRNAtrap because viRNAtrap treats each distinct input file as if it comes from a distinct sample.
 
 
-### Running example:
+### Running example (Demo):
 a. To run with an example input fastq file (```input_fastq/example_unmapped.fastq```) run
 
 ```
