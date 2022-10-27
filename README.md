@@ -94,21 +94,21 @@ The package comes with a small example that is intended to be used to test if on
  ```
 
 
-b. To run viRNAtrap in fast mode, run the command as shown below:
-
-```
-virnatrap-predict --input input_fastq/ --output output_contigs/ --fastmode 1 
-```
-
-And evaluate the output file generated in ```output_contigs/``` using the expected output in ```expected_output/output_c.txt```
-
-The fast mode calls a C library to assemble the viral contigs from the model-predicted viral reads. The C library is located at ```virnatrap/src/assemble_read_c.c``` and must first be compiled using the command 
+b. To run viRNAtrap in fast mode, The fast mode calls a C library to assemble the viral contigs from the model-predicted viral reads. The C library is located at ```virnatrap/src/assemble_read_c.c``` and must first be compiled using the command 
 
 ```
 gcc -o src/assemble_read_c.so -shared -fPIC -O3 src/assemble_read_c.c
 ```
 
 The library can also be compiled using an equivalent command for other C compilers.
+
+To run viRNatrap in fast mode, run the command as shown below:
+
+```
+virnatrap-predict --input input_fastq/ --output output_contigs/ --fastmode 1 
+```
+
+And evaluate the output file generated in ```output_contigs/``` using the expected output in ```expected_output/output_c.txt```
 
 c. It is possible to run viRNAtrap using multiple threads, to process multiple input files in parallel. To run in parrallel using 28 threads run the command as shown below:
 
