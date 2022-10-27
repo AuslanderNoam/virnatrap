@@ -94,7 +94,7 @@ The package comes with a small example that is intended to be used to test if on
  ```
 
 
-b. To run viRNAtrap in fast mode, run the command as shown below: 
+b. To run viRNAtrap in fast mode, run the command as shown below:
 
 ```
 virnatrap-predict --input input_fastq/ --output output_contigs/ --fastmode 1 
