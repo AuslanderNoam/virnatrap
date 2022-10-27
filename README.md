@@ -102,7 +102,7 @@ gcc -o src/assemble_read_c.so -shared -fPIC -O3 src/assemble_read_c.c
 
 The library can also be compiled using an equivalent command for other C compilers.
 
-To run viRNatrap in fast mode, run the command as shown below:
+Then, to run viRNatrap in fast mode, run the command as shown below:
 
 ```
 virnatrap-predict --input input_fastq/ --output output_contigs/ --fastmode 1 
