@@ -21,6 +21,9 @@ Python versions tested: Python 3.6, 3.7, 3.8 and 3.9
 [1] Abdurrahman Elbasir, Ying Ye, Daniel E. Schäffer, Jayamanna Wickramasinghe, Paul M. Lieberman, Alejandro A. Schäffer, Noam Auslander. [Characterizing the landscape of viral expression in cancer by deep learning.](https://github.com/AuslanderLab/virnatrap) *In preparation*.
 
 ## Installation
+
+Typical install time on a "normal" desktop computer: less than 30 minutes (depending on the number of packages already installed)
+
 ### Install with pip
 To install the current version of this Github repo, run the following commands
 ```
@@ -68,6 +71,9 @@ To use viRNAtrap, a user must provide an input directory continaing one or more 
 
 
 ### Running example (Demo):
+
+Expected run time for demo on a "normal" desktop computer: less than 10 minutes
+
 a. To run with an example input fastq file (```input_fastq/example_unmapped.fastq```) run
 
 ```
