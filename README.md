@@ -1,6 +1,6 @@
 ![logo](https://user-images.githubusercontent.com/85499012/154709951-8a742d2b-17ee-4a95-aeab-ea277a698435.png)
 
-viRNAtrap is a package to generate predicted viral contigs from unmapped RNAseq reads
+viRNAtrap is a package to generate predicted viral contigs from unmapped RNAseq reads.
 
 
 
