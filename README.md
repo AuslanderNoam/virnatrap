@@ -18,7 +18,7 @@ Operating systems tested: Linux (CentOS version 7 and Ubuntu 20.04 LTS) and MacO
 Python versions tested: Python 3.6, 3.7, 3.8 and 3.9
 
 ## Citation
-[1] Abdurrahman Elbasir, Ying Ye, Daniel E. Schäffer, Jayamanna Wickramasinghe, Paul M. Lieberman, Alejandro A. Schäffer, Noam Auslander. [Characterizing the landscape of viral expression in cancer by deep learning.](https://github.com/AuslanderLab/virnatrap) *In preparation*.
+[1] Abdurrahman Elbasir, Ying Ye, Daniel E. Schäffer, Xue Hao, Jayamanna Wickramasinghe, Konstantinos Tsingas, Paul M. Lieberman, Qi Long, Quaid Morris, Rugang Zhang, Alejandro A. Schäffer & Noam Auslander. [A deep learning approach reveals unexplored landscape of viral expression in cancer](https://www.nature.com/articles/s41467-023-36336-z)
 
 ## Installation
 
